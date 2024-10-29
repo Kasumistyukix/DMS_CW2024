@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Boss extends FighterPlane {
 
+	//i pushed this
 	private static final String IMAGE_NAME = "bossplane.png";
 	private static final double INITIAL_X_POSITION = 1000.0;
 	private static final double INITIAL_Y_POSITION = 400;
