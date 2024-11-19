@@ -1,9 +1,9 @@
 ## Github
 
 ## Compilation Instructions
-
+JUnit 
 ## Implemented and Working Properly
-- Any Limit?
+- Cropped enemyPlane.png
 
 ## Implemented and not Working Properly
 - If there is non, will there be penalty?
