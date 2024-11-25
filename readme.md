@@ -1,20 +1,21 @@
 ## Github
 
 ## Compilation Instructions
-JUnit 
+ 
 ## Implemented and Working Properly
-- Cropped enemyPlane.png
+- Cropped enemyplane.png
 
 ## Implemented and not Working Properly
-- If there is non, will there be penalty?
-
+- Implemented test for level parent to test if timeline() started and stopped as intended but could not get it to work properly
+- 
 ## Features Not Implemented
 - Any Example ie optimisations
+- 
 
 ## New Java Classes
 
 ## Modified Java Classes:
-
+- goToNextLevel in LevelParent 
 ## Unexpected Problems
 
 ## Deliverables
