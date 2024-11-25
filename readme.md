@@ -13,9 +13,13 @@
 - 
 
 ## New Java Classes
-
+- JUnit Test Cases
+    - shieldTest
+    - levelParent
+    - mainTest
 ## Modified Java Classes:
 - goToNextLevel in LevelParent 
+- 
 ## Unexpected Problems
 
 ## Deliverables
