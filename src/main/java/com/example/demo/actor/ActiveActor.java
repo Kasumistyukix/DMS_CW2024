@@ -1,6 +1,7 @@
-package com.example.demo;
+package com.example.demo.actor;
 
-import javafx.scene.image.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public abstract class ActiveActor extends ImageView {
 	

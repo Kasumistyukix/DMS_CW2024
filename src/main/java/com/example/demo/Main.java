@@ -1,12 +1,13 @@
-package com.example.demo.controller;
+package com.example.demo;
 
-import java.lang.reflect.InvocationTargetException;
-
+import com.example.demo.controller.Controller;
+import com.example.demo.controller.MainMenuController;
+import com.example.demo.controller.SceneManager;
 import javafx.application.Application;
-import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 
 public class Main extends Application {
@@ -18,26 +19,28 @@ public class Main extends Application {
 //	private Controller myController;
 
 	@Override
-	public void start(Stage stage){//throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	//Scene Manager
+	public void start(Stage stage) {
 		try {
-			FXMLLoader loader = new FXMLLoader(Main.class.getResource(MAIN_MENU_FXML));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource(MAIN_MENU_FXML));
 			Parent root = loader.load();
-			Controller GameController = new Controller(stage);
+
+			Controller gameController = new Controller(stage);
+			SceneManager sceneManager = new SceneManager(stage);
+
 			MainMenuController mainMenuController = loader.getController();
-			mainMenuController.initialize(GameController);
+			mainMenuController.initialize(gameController, sceneManager);
 
 			Scene scene = new Scene(root, SCREEN_WIDTH, SCREEN_HEIGHT);
 			stage.setTitle(TITLE);
-			stage.setResizable(false);
-			stage.setHeight(SCREEN_HEIGHT);
-			stage.setWidth(SCREEN_WIDTH);
 			stage.setScene(scene);
+			stage.setResizable(false);
 			stage.show();
-
-		}catch(Exception e){
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+
 
 	public static void main(String[] args) {
 		launch();
