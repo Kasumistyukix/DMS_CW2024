@@ -9,6 +9,9 @@ import java.io.IOException;
 
 public class SceneManager{
 
+    /**
+     * Stage object for manipulation by the manager
+     */
     private final Stage stage;
 
     public SceneManager(Stage stage) {

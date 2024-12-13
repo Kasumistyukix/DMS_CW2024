@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -15,21 +16,41 @@
          </font>
       </Label>
       <!-- Character 1 Image -->
-      <ImageView fx:id="character1Image" fitHeight="300.0" fitWidth="200.0" layoutX="200.0" layoutY="200.0">
+      <ImageView fx:id="character1Image" fitHeight="300.0" fitWidth="200.0" layoutX="225.0" layoutY="139.0">
          <image>
             <Image url="@../com/example/demo/images/character_1.png" />
          </image></ImageView>
 
       <!-- Character 2 Image -->
-      <ImageView fx:id="character2Image" fitHeight="300.0" fitWidth="200.0" layoutX="800.0" layoutY="200.0">
+      <ImageView fx:id="character2Image" fitHeight="300.0" fitWidth="200.0" layoutX="825.0" layoutY="139.0">
          <image>
             <Image url="@../com/example/demo/images/character_2.png" />
          </image></ImageView>
 
       <!-- Select Character Button 1 -->
-      <Button layoutX="200.0" layoutY="520.0" onAction="#selectCharacter1" prefWidth="250.0" text="Select Character 1" />
+      <Button layoutX="200.0" layoutY="456.0" onAction="#selectCharacter1" prefHeight="45.0" prefWidth="250.0" text="Select Laughing Fox">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
 
       <!-- Select Character Button 2 -->
-      <Button layoutX="800.0" layoutY="520.0" onAction="#selectCharacter2" prefWidth="250.0" text="Select Character 2" />
+      <Button layoutX="800.0" layoutY="456.0" onAction="#selectCharacter2" prefHeight="46.0" prefWidth="250.0" text="Select Flame Orge">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="515.0" layoutY="671.0" onAction="#backToMenu" prefHeight="46.0" prefWidth="250.0" text="Back To Main Menu">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextArea editable="false" layoutX="200.0" layoutY="510.0" prefHeight="160.0" prefWidth="250.0" text="Starting Health : 10&#10;Speed : Fast&#10;Ability : Evasive Maneuver&#10;Become IMMUNE to all enemy &#10;projectiles &#10;for 3 seconds.&#10;(10 second recharge).">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </TextArea>
+      <TextArea editable="false" layoutX="800.0" layoutY="510.0" prefHeight="160.0" prefWidth="250.0" text="Starting Health : 17&#10;Speed : Moderate&#10;Ability : Rapid Combustion&#10;Speed QUADRUPLES for 100 &#10; frames (about 10 seconds).&#10;(250 game-frames Recharge)">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </TextArea>
    </children>
 </AnchorPane>
