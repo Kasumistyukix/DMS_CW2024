@@ -1,12 +1,51 @@
 ## Github
+Name: Ko Jeng Jun
+
+Student ID: 20516491
+
 https://github.com/Kasumistyukix/DMS_CW2024.git
 
-## Compilation Instructions
- Use IntelLiJ Idea , make sure Maven is installed, to do so, 
+## Compilation
+Java Development Kit (JDK) 21 and above
+(Made with JDK 23)
+
+JavaFX 21 and above
+(Made with JavaFX API of version 23.0.1 by JavaFX runtime of version 19.0.2)
+
+Maven 3.9.5 and above
+(Made with Maven 3.9.8)
+
+IntelliJ Community Edition 2023.3.4 and above
+(Made with IntelliJ Community Edition 2024.2.4)
+
+Git (Recommended to clone repository)
+
+Reload Maven to ensure all JavaFX dependencies are up to date
+
+### Installation Links:
+It is recommended to use exact versions in case of compilation errors
+#### Java Development Kit (JDK):
+Recommended to use JDK 23
+https://www.oracle.com/cis/java/technologies/downloads/#jdk23-windows
+#### JavaFX: 
+Recommended to use version 23.0.1
+https://gluonhq.com/products/javafx/
+
+#### IntelliJ Community Edition:
+Recommended to use version 2024.2.4
+https://www.jetbrains.com/idea/download/?section=windows
+
+#### Install Maven:
+Use IntelLiJ Idea , make sure Maven is installed, to do so, 
  1. Go to File > Settings > Plugins
- 2. Search Maven, and install.
+ 2. Search Maven in the Marketplace tab, and install. 
  
- Run "Main" to start the game
+#### Cloning Repository
+1. Clone this repository
+   1. Go to File > New > Project from Version Control
+   2. Paste the URL from earlier into the URL field
+2. Open project in IntelliJ Community Edition
+3. Run "Main" to start the game
 
 ## Implemented and Working Properly
 1. **Cropped**: `enemyplane.png`
@@ -219,9 +258,9 @@ Removal system not working
 Named Folder as: COMP2042surnameFirstname
 
     [x] README.md
-    [ ] Design.pdf
+    [x] Design.pdf
     [x] javadoc
-    [ ] Demo.mp4
-    [ ] SurnameFirstName_IDE_JavaVersion.zip
+    [x] Demo.mp4
+    [X] SurnameFirstName_IDE_JavaVersion.zip
 
     
